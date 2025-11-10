@@ -2,13 +2,13 @@
 using namespace std;
 
 int main(){
-    int mahasiswa, nilai, jumlah = 0, rata, i = 1;
+    int mahasiswa, nilai, jumlah = 0, rata;
 
     cout << "Masukkan jumlah mahasiswa: ";
     cin >> mahasiswa;
     cout << endl;
 
-    for(i; i <= mahasiswa; i++){
+    for(int i = 1; i <= mahasiswa; i++){
         cout << "Nilai mahasiswa ke-" << i << ": ";
         cin >> nilai;
 
@@ -17,7 +17,7 @@ int main(){
     cout << endl;
 
     cout << "Jumlah nilai: " << jumlah << endl;
-    rata = jumlah / i;
+    rata = jumlah / mahasiswa;
     cout << "Rata-rata nilai: " << rata;
     cin.get();
 }
